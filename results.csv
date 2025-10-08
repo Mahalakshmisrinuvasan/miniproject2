@@ -1,0 +1,169 @@
+name,price,rating,image
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png
+Apple iPhone 11 (64GB),41999,4.3,images/iphone.png
+Apple iPhone 12 (128GB),52999,4.5,images/iphone.png
+Apple iPhone 13 (128GB),58999,4.6,images/iphone.png
+Apple iPhone 13 Pro (256GB),82999,4.8,images/iphone.png
+Apple iPhone 14 (128GB),69999,4.7,images/iphone.png
+Apple iPhone 14 Pro Max (512GB),129999,4.9,images/iphone.png
+Apple iPhone SE (64GB),32999,4.2,images/iphone.png
+Apple iPhone XR (128GB),35999,4.3,images/iphone.png
+Apple iPhone XS Max (256GB),49999,4.4,images/iphone.png
+Apple iPhone 15 (128GB),79999,4.8,images/iphone.png
+Samsung Galaxy M14 5G (6GB/128GB),13999,4.2,images/samsung.png
+Samsung Galaxy A14 5G (4GB/64GB),15999,4.1,images/samsung.png
+Samsung Galaxy S21 FE 5G (128GB),32999,4.5,images/samsung.png
+Samsung Galaxy S22 Ultra (256GB),94999,4.8,images/samsung.png
+Samsung Galaxy Z Fold4 (512GB),139999,4.9,images/samsung.png
+Samsung Galaxy Note 20 Ultra,79999,4.6,images/samsung.png
+HP 15s Intel i5 (8GB/512GB SSD),52999,4.3,images/hplaptop.png
+HP Pavilion Ryzen 5 (16GB/512GB SSD),61999,4.5,images/hplaptop.png
+HP Omen Gaming Laptop (16GB/1TB SSD),89999,4.7,images/hplaptop.png
+HP Victus Gaming Laptop (Ryzen 7/16GB/512GB),75999,4.6,images/hplaptop.png
+LG 7kg Top Load Washing Machine,22999,4.2,images/washingmachine.png
+IFB 6kg Automatic Washing Machine,27999,4.3,images/washingmachine.png
+Whirlpool 7kg Semi-Automatic Washing Machine,18999,4.1,images/washingmachine.png
+Bosch 7kg Fully Automatic Washing Machine,32999,4.5,images/washingmachine.png

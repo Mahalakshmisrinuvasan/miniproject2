@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Results</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6dd5ed, #2193b0);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Top bar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #ddd;
+      z-index: 100;
+    }
+    .topbar input[type="text"] {
+      padding: 8px;
+      width: 250px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .topbar select {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .topbar button {
+      padding: 8px 14px;
+      background: #2193b0;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .topbar button:hover {
+      background: #176d81;
+    }
+
+    /* Product Grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .card img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      transition: transform 0.2s ease;
+    }
+    .card img:hover {
+      transform: scale(1.05);
+    }
+    .name {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    .price {
+      font-size: 17px;
+      color: #007bff;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .rating {
+      margin-bottom: 10px;
+      color: #ff9800;
+    }
+
+    /* Category Badge */
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .badge.mobiles { background: #e1f5fe; color: #0277bd; }
+    .badge.laptops { background: #ede7f6; color: #4527a0; }
+    .badge.appliances { background: #fff3e0; color: #ef6c00; }
+
+    /* Actions */
+    .actions {
+      text-align: center;
+      margin: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+      margin: 5px;
+      display: inline-block;
+    }
+    .btn-back { background: #6c757d; color: white; }
+    .btn-back:hover { background: #5a6268; }
+    .btn-download { background: #28a745; color: white; }
+    .btn-download:hover { background: #218838; }
+
+    /* Modal Popup */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      width: 350px;
+      animation: fadeIn 0.3s ease;
+    }
+    .modal-content img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .close {
+      float: right;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔍 Results for "{{ query }}"</h1>
+  </header>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <form method="post" action="/search" style="display:flex; gap:10px;">
+      <input type="hidden" name="query" value="{{ query }}">
+      <input type="text" name="query" placeholder="Refine search..." value="{{ query }}">
+      <select name="sort" onchange="this.form.submit()">
+        <option value="">Sort by</option>
+        <option value="price_asc">Price: Low to High</option>
+        <option value="price_desc">Price: High to Low</option>
+        <option value="rating_desc">Rating: High to Low</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Products -->
+  <div class="container">
+    {% if products %}
+      {% for item in products %}
+      <div class="card" onclick="openModal('{{ item.name }}','{{ item.price }}','{{ item.rating }}','{{ url_for('static', filename=item.image) }}')">
+        <span class="badge {{ item.category|lower }}">{{ item.category }}</span>
+        <img src="{{ url_for('static', filename=item.image) }}" alt="{{ item.name }}">
+        <div class="name">{{ item.name }}</div>
+        <div class="price">₹{{ "{:,}".format(item.price) }}</div>
+        <div class="rating">
+          {% for i in range(item.rating|int) %}⭐{% endfor %}
+          {% if item.rating - (item.rating|int) >= 0.5 %}⭐{% endif %}
+          ({{ item.rating }})
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p style="text-align:center; color:red; font-size:18px;">No results found!</p>
+    {% endif %}
+  </div>
+
+  <!-- Footer -->
+  <div class="actions">
+    <a href="/download" class="btn btn-download">⬇ Download CSV</a>
+    <a href="/" class="btn btn-back">⬅ Back to Home</a>
+  </div>
+<!-- Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="">
+    <h2 id="modalName"></h2>
+    <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+    <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+    <hr>
+    <h3>📋 Specifications</h3>
+    <ul style="text-align:left; list-style: none; padding: 0;">
+      <li><strong>Storage:</strong> <span id="modalStorage"></span></li>
+      <li><strong>Camera:</strong> <span id="modalCamera"></span></li>
+      <li><strong>Processor:</strong> <span id="modalProcessor"></span></li>
+      <li><strong>Battery:</strong> <span id="modalBattery"></span></li>
+    </ul>
+    <button style="margin-top:10px; padding:10px 20px; background:#007bff; color:white; border:none; border-radius:6px; cursor:pointer;">
+      🛒 Buy Now
+    </button>
+  </div>
+</div>
+
+<script>
+  function openModal(name, price, rating, image) {
+    // Example: dynamically fill dummy specs (later link with CSV/DB)
+    document.getElementById("modalName").innerText = name;
+    document.getElementById("modalPrice").innerText = "₹" + parseInt(price).toLocaleString();
+    document.getElementById("modalRating").innerText = rating + " ⭐";
+    document.getElementById("modalImage").src = image;
+
+    // Example auto-filled specs (in real case: load from dataset/JSON)
+    if (name.toLowerCase().includes("iphone")) {
+      document.getElementById("modalStorage").innerText = "128GB / 256GB options";
+      document.getElementById("modalCamera").innerText = "12MP Dual Camera";
+      document.getElementById("modalProcessor").innerText = "A15 Bionic";
+      document.getElementById("modalBattery").innerText = "3110 mAh";
+    } else if (name.toLowerCase().includes("samsung")) {
+      document.getElementById("modalStorage").innerText = "128GB / 512GB";
+      document.getElementById("modalCamera").innerText = "108MP Quad Camera";
+      document.getElementById("modalProcessor").innerText = "Snapdragon 8 Gen 1";
+      document.getElementById("modalBattery").innerText = "5000 mAh";
+    } else if (name.toLowerCase().includes("hp")) {
+      document.getElementById("modalStorage").innerText = "512GB SSD / 1TB HDD";
+      document.getElementById("modalCamera").innerText = "720p HD Webcam";
+      document.getElementById("modalProcessor").innerText = "Intel i5 / Ryzen 5";
+      document.getElementById("modalBattery").innerText = "8 hours";
+    } else if (name.toLowerCase().includes("washing")) {
+      document.getElementById("modalStorage").innerText = "7kg Capacity";
+      document.getElementById("modalCamera").innerText = "—";
+      document.getElementById("modalProcessor").innerText = "Digital Inverter Motor";
+      document.getElementById("modalBattery").innerText = "—";
+    }
+
+    document.getElementById("productModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("productModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
